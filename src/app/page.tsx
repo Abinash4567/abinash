@@ -2,11 +2,12 @@ import Image from "next/image";
 import dop from "../../public/dop.jpg";
 import Timeline from "@/components/timeline";
 import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
     <div className="bg-gren-300 mx-24 h-[200vh]">
-      <div className="mt-8 flex justify-between border border-green-100 hover:border-green-400 rounded-3xl py-3  px-9 w-2/4  font-bold transition ease-in-out duration-1000 sticky top-2 backdrop-blur-sm ml-64">
+      <div className="mt-8 z-10 flex justify-between border hover:border-green-400 rounded-3xl py-3  px-9 w-2/4  font-bold transition ease-in-out duration-1000 sticky top-2 backdrop-blur-sm ml-64">
 
         <div className="hover:text-green-400 cursor-pointer transition ease-in-out duration-500">Home</div>
         <div className="hover:text-green-400 cursor-pointer transition ease-in-out duration-500">Timeline</div>
@@ -55,6 +56,7 @@ export default function Home() {
     </div>
 
     <Timeline />
+    <Skills />
 
     </div>
   );
