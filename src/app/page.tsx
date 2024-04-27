@@ -6,7 +6,7 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <div className="bg-gren-300 mx-24 h-[200vh]">
+    <div className="bg-reen-300 mx-24 h-[200vh]">
       <div className="mt-8 z-10 flex justify-between border hover:border-green-400 rounded-3xl py-3  px-9 w-2/4  font-bold transition ease-in-out duration-1000 sticky top-2 backdrop-blur-sm ml-64">
 
         <div className="hover:text-green-400 cursor-pointer transition ease-in-out duration-500">Home</div>
@@ -15,7 +15,7 @@ export default function Home() {
         <div className="hover:text-green-400 cursor-pointer transition ease-in-out duration-500">Resume</div>
       </div>
 
-    <div className="flex gap-2 pt-5 border-gray-50 border-">
+    <div className="flex gap-2 pt-5 border-red-400">
 
       <div className="bg-slte-300 mt-24"> 
         <pre className="text-green-500 font-bold mb-5 text-lg">Hi, my name is</pre>
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </div> */}
 
-        <Image src={dop} alt="people" width={400}/>
+        <Image src={dop} alt="people" width={400} className="mt-12"/>
 
     </div>
 
