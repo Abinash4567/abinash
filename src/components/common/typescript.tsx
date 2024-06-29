@@ -3,8 +3,8 @@ import React from 'react'
 const Typescript = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg"
-        width="40px" 
-      height="40px"
+            width="40px"
+            height="35px"
             aria-label="TypeScript" role="img"
             viewBox="0 0 512 512"><rect
                 width="512" height="512"

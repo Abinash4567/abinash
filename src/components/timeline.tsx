@@ -5,13 +5,14 @@ import Image from 'next/image'
 
 function Timeline() {
     return (
-        <div className="mt-32 borde border-geen-500">
+        <div className="mt-32 border border-green-500">
             <div className='flex gap-5'>
                 <div className="text-3xl font-bold text-slate-300">About Me</div>
                 <div className="border-gray-700 border-t-[1px] w-72 mt-5"></div>
             </div>
             
             <div className="flex gap-20">
+                
                 <div className="text-slate-400 basis-3/5 leading-relaxed bgslate-700 self-cente font-semibold borde-red-600">
                     <div className="mt-6">
                         Hi, I&apos;m Abinash. I create amazing things that posses IP
@@ -39,10 +40,9 @@ function Timeline() {
                     </div>
                 </div>
 
-                <div className="-12">
+                <div>
                     <div className="group relative">
                         <Image
-                            // className="w-full h-auto"
                             src={dop}
                             alt="Original Image"
                             height={300}
