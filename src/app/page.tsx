@@ -7,19 +7,24 @@ import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 import Skills from "@/components/skills";
 import GreetingTicker from "@/components/greetingTicker";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 
-export default function Home() {
-  const [greetStatus, setGreetStatus] = useState<boolean>(true);
+export default function Home() 
+{
+  const [greetStatus, setGreetStatus] = useState<boolean>(false);
   useEffect(()=>{
-    // setTimeout(()=>{
-    //   setGreetStatus(true);
-    // }, 5500)
+    setTimeout(()=>{
+      setGreetStatus(true);
+    }, 5500)
   }, []);
   return (
   <>
-    {/* {!greetStatus && <GreetingTicker/>} */}
-    {greetStatus && <div className="mx-24 h-[600vh]">
+    {!greetStatus && <GreetingTicker/>}
+    {greetStatus && <motion.div initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      animate={{ x:[-100, 0], y:0, rotate:0, opacity:1}}
+      transition={{ type: "spring", ease: "easeOut" }}  className="mx-24">
 
       
       <div className="flex justify-between border hover:border-green-400 rounded-3xl py-3  px-9 w-2/4 font-bold transition ease-in-out duration-1000 sticky top-4 backdrop-blur-sm ml-64">
@@ -31,11 +36,7 @@ export default function Home() {
       </div>
 
 
-
-
-
-
-      <div className="flex gap-2 pt-5 border-red-400 border-2">
+      <div className="flex gap-2 pt-5 border-red-400 borde-2">
 
           <div className="bg-slte-300 mt-24">
             <pre className="text-green-500 font-bold mb-5 text-lg">Hi, my name is</pre>
@@ -44,7 +45,7 @@ export default function Home() {
 
             <div className="mt-7 text-slate-400 w-[calc((100svw-48px)/2)] pr-20 font-medium">
               I&apos;m currently 
-                <span className="text-green-500 w-">pursuing degree</span>in CS major. Currently focused in web technologies and <span className="text-green-500">JS frameworks</span> to create dynamic and interactive web apps.
+                <span className="text-green-500">{' '}pursuing degree{' '}</span>in CS major. Currently focused in web technologies and <span className="text-green-500">JS frameworks</span> to create dynamic and interactive web apps.
           </div>
 
             <div className="mt-7 flex">
@@ -66,7 +67,7 @@ export default function Home() {
       <Timeline />
       <Skills />
 
-    </div>}
+    </motion.div>}
   </>
   );
 }

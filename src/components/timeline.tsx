@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 function Timeline() {
     return (
-        <div className="mt-32 border border-green-500">
+        <div className="mt-32 borde border-green-500">
             <div className='flex gap-5'>
                 <div className="text-3xl font-bold text-slate-300">About Me</div>
                 <div className="border-gray-700 border-t-[1px] w-72 mt-5"></div>
