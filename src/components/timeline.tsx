@@ -41,18 +41,7 @@ function Timeline() {
                 </div>
 
                 <div>
-                    <div className="group relative">
-                        <Image
-                            src={dop}
-                            alt="Original Image"
-                            height={300}
-                        />
-                        <Image
-                            className="absolute top-0 left-0 w-full h-auto opacity-0 transition-opacity duration-1000 group-hover:opacity-100"
-                            src={scc}
-                            alt="Hover Image"
-                        />
-                    </div>
+                    <div className='w-96 border-red-300 bottom-2'><iframe style={{borderRadius:"20px" }} src="https://open.spotify.com/embed/playlist/5xyuYHd2fQypSamdxUh67W?utm_source=generator&theme=0" width="400" height="360"> </iframe></div>
                 </div>
             </div>
         </div>
