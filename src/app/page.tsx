@@ -59,7 +59,7 @@ export default function Home()
 
           </div>
 
-          <Image src={dop} alt="people" width={400} className="mt-12" />
+          {/* <Image src={dop} alt="people" width={400} className="mt-12" /> */}
       </div>
 
 
