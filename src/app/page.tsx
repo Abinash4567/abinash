@@ -9,7 +9,6 @@ import GreetingTicker from "@/components/greetingTicker";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-
 export default function Home() 
 {
   const [greetStatus, setGreetStatus] = useState<boolean>(false);
