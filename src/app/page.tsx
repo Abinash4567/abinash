@@ -8,6 +8,7 @@ import Skills from "@/components/skills";
 import GreetingTicker from "@/components/greetingTicker";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import ImageScroll from "@/components/imageScroll";
 
 export default function Home() 
 {
@@ -23,16 +24,16 @@ export default function Home()
     {greetStatus && <motion.div initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       animate={{ x:[-100, 0], y:0, rotate:0, opacity:1}}
-      transition={{ type: "spring", ease: "easeOut" }}  className="mx-24">
+      transition={{ type: "spring", ease: "easeOut" }}  className="mx-24 h-[12000px]">
 
       
-      <div className="flex justify-between border hover:border-green-400 rounded-3xl py-3  px-9 w-2/4 font-bold transition ease-in-out duration-1000 sticky top-4 backdrop-blur-sm ml-64">
+      {/* <div className="flex justify-between border hover:border-green-400 rounded-3xl py-3 px-9 w-2/4 font-bold transition ease-in-out duration-1000 sticky top-4 backdrop-blur-sm ml-64 z-20">
 
         <div className="hover:text-green-400 cursor-pointer transition ease-in-out duration-500">Home</div>
         <div className="hover:text-green-400 cursor-pointer transition ease-in-out duration-500">Timeline</div>
         <div className="hover:text-green-400 cursor-pointer transition ease-in-out duration-500">Projects</div>
         <div className="hover:text-green-400 cursor-pointer transition ease-in-out duration-500">Resume</div>
-      </div>
+      </div> */}
 
 
       <div className="flex gap-2 pt-5 border-red-400 borde-2">
@@ -65,6 +66,12 @@ export default function Home()
 
       <Timeline />
       <Skills />
+      <ImageScroll />
+      <ImageScroll />
+      <ImageScroll />
+      <ImageScroll />
+      <ImageScroll />
+
 
     </motion.div>}
   </>

@@ -12,7 +12,7 @@ import Typescript from './common/typescript';
 
 function Skills() {
     return (
-        <div className="bordr-2 border-emeald-600 mt-20 flex-col">
+        <div className="bordr-2 border-emeald-600 mt-20 flex-col -z-20">
             <div className="flex gap-5 justify-center">
                 <div className="text-3xl font-bold text-slate-300">Skills</div>
                 <div className="border-gray-700 border-t-[1px] w-72 mt-5"></div>

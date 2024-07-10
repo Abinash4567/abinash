@@ -1,7 +1,4 @@
 import React from 'react'
-import dop from "../../public/dop.jpg"
-import scc from "../../public/scc.png";
-import Image from 'next/image'
 
 function Timeline() {
     return (
