@@ -88,9 +88,6 @@ const ImageCanvas: React.FC<ImageCanvasProps> = ({ scrollHeight, numFrames, widt
 
                     <div className='text-gray-500 font-semibold'>billops is a subscription management platform for businesses. It helps businesses manage their subscription models, billing, and user data. Billops offers a dashboard with analytics like revenue, subscribers, and retention rate. Businesses can also manage their subscriptions, coupons, and user details. Billops provides a secure API for organizations to access their data and webhooks to capture payments.</div>
 
-
-
-
                 </div>
 
         
