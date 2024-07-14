@@ -4,8 +4,9 @@ import { Github, Globe } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Card({props}: {props: data}) {
-    return (<div className='flex'>
-        <div className='pr-28 border2 boder-red-300 w-[50vw]'>
+    return (
+    <div className='flex'>
+        <div className='w-[50vw] sm:w-[80vw] lg:w-[50vw]'>
             <div className="text-[#f5f5fd] text-4xl mt-12 flex">
                 {props.name}
                 <div className='flex justify-center ml-8'>
@@ -18,7 +19,7 @@ export default function Card({props}: {props: data}) {
             <div className='text-gray-400 font-semibold'>{props.description}</div>
         </div>
 
-        <div className='border- w-[50vw] overflow-hidden h-[50vh] mt-12 flex items-center'>
+        <div className='lg:w-[40vw] overflow-hidden h-[50vh] mt-12 lg:flex items-center hidden'>
             <Image src={props.image} width={500} height={900} alt='Image'  className='transition-transform duration-300 ease-in-out hover:scale-110'/>
             {/* <InteractiveImage imageSrc={props.image}/> */}
         </div>

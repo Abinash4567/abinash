@@ -16,7 +16,7 @@ export default function Projects() {
     const x = useTransform(scrollYProgress, [0, 0.9], ["1%", "-238%"]);
 
 
-    return (<div ref={parentDiv} className='h-[1000vh] borde-2 pt-12' id='projects'>
+    return (<div ref={parentDiv} className='pt-12 lg:h-[300vh] md:w-[90vw] sm:h-[240vh] sm:w-[80vw]' id='projects'>
 
         <div className='sticky top-24 overflow-hidden'>
             <div className="flex gap-5 mb-8">
