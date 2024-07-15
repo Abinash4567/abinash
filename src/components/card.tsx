@@ -12,7 +12,7 @@ export default function Card({props}: {props: data}) {
                 <div className='flex justify-center ml-8'>
                 <Link href={props.url}><div className="hover:bg-slate-800 transition ease-in-out p-3 rounded-xl cursor-pointer text-[#22c55e] w-fit"><Github size={24} /></div></Link>
 
-                <Link href={props.url}><div className="hover:bg-slate-800 transition ease-in-out p-3 rounded-xl cursor-pointer text-[#22c55e] w-fit"><Globe size={24} /></div></Link>
+                <Link href={props.web}><div className="hover:bg-slate-800 transition ease-in-out p-3 rounded-xl cursor-pointer text-[#22c55e] w-fit"><Globe size={24} /></div></Link>
             </div>
             </div>
             <div className="text-sm text-green-500 font-bold mb-4">{props.techStack}</div>
