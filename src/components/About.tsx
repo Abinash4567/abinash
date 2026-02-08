@@ -51,7 +51,7 @@ export default function About() {
             I am a Computer Science Graduate (Class of 2025) from <strong>Motilal Nehru National Institute of Technology (MNNIT)</strong>.
           </p>
           <p>
-            My technical playground includes <strong>React, Express and Cloud</strong>. Whether it's designing microservices or orchestrating LLM workflows with LangChain, I thrive on building efficient, high-performance software.
+            My technical playground includes <strong>React, Express and Cloud</strong>. Whether it&apos;s designing microservices or orchestrating LLM workflows with LangChain, I thrive on building efficient, high-performance software.
           </p>
         </div>
       </div>
