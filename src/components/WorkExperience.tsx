@@ -13,15 +13,15 @@ const experiences: Experience[] = [
     role: 'Software Development Engineer',
     date: 'Sep 2025 - Feb 2026',
     points: [
-  "Designed and implemented a modular frontend architecture to enhance scalability, maintainability, and component reusability.",
-  "Developed reusable data visualization components including pie charts, bar graphs, and bubble charts to present analytical insights.",
-  "Built an interactive conversational user interface integrated with an AI copilot to support dynamic user interactions.",
-  "Implemented real-time streaming of AI responses, managing multiple processing states and rendering UI components dynamically based on structured JSON outputs.",
-  "Developed logic for parsing AI-generated responses to trigger recommended actions and dynamically display metric visualizations.",
-  "Engineered a robust file upload system with exponential retry mechanisms and parallel multi-file upload support to ensure reliability and performance.",
-  "Contributed to the development of an identity microservice to populate user sessions with brand and user-specific information.",
-  "Implemented Meta and Google OAuth sign-in flows to securely retrieve refresh tokens and associated advertising account data."
-]
+      "Designed and implemented a modular frontend architecture to enhance scalability, maintainability, and component reusability.",
+      "Developed reusable data visualization components including pie charts, bar graphs, and bubble charts to present analytical insights.",
+      "Built an interactive conversational user interface integrated with an AI copilot to support dynamic user interactions.",
+      "Implemented real-time streaming of AI responses, managing multiple processing states and rendering UI components dynamically based on structured JSON outputs.",
+      "Developed logic for parsing AI-generated responses to trigger recommended actions and dynamically display metric visualizations.",
+      "Engineered a robust file upload system with exponential retry mechanisms and parallel multi-file upload support to ensure reliability and performance.",
+      "Contributed to the development of an identity microservice to populate user sessions with brand and user-specific information.",
+      "Implemented Meta and Google OAuth sign-in flows to securely retrieve refresh tokens and associated advertising account data."
+    ]
 
   },
   {
@@ -62,10 +62,10 @@ export default function WorkExperience() {
               <h3 className="text-2xl font-bold text-white">{exp.company}</h3>
               <span className="text-sm text-neutral-500 font-mono mt-1 md:mt-0">{exp.date}</span>
             </div>
-            
+
             {/* Role */}
             <h4 className="text-lg font-medium text-cyan-400 mb-6">{exp.role}</h4>
-            
+
             {/* Points */}
             <ul className="space-y-4">
               {exp.points.map((point, idx) => (

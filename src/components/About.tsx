@@ -1,4 +1,5 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -6,10 +7,13 @@ export default function About() {
       {/* Profile Image Column */}
       <div className="flex-shrink-0">
         <div className="w-64 h-64 rounded-full bg-neutral-800 border-2 border-neutral-700 overflow-hidden relative">
-            {/* Placeholder for image */}
-            <div className="absolute inset-0 flex items-center justify-center text-neutral-500 text-sm">
-                Profile Image
-            </div>
+          <Image 
+            src="/cat.jpg" 
+            alt="Profile Image" 
+            fill 
+            className="object-cover"
+            priority
+          />
         </div>
       </div>
 
@@ -43,7 +47,7 @@ export default function About() {
 
         <div className="space-y-4 text-neutral-400 leading-relaxed max-w-2xl text-sm md:text-base">
           <p>
-            I am someone who loves his profession, obsessed with coding, creating, and deeply curious about how things work in Systems and AI. 
+            I am someone who loves his profession, obsessed with coding, creating, and deeply curious about how things work in Systems and AI.
             I am a Computer Science Graduate (Class of 2025) from <strong>Motilal Nehru National Institute of Technology (MNNIT)</strong>.
           </p>
           <p>

@@ -71,9 +71,9 @@ export default function Projects() {
                 </h3>
                 <div className="flex items-center gap-2">
                   {project.github && (
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
+                    <a
+                      href={project.github}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-neutral-500 hover:text-white transition-colors"
                       title="View Code"
@@ -82,9 +82,9 @@ export default function Projects() {
                     </a>
                   )}
                   {project.demo && (
-                    <a 
-                      href={project.demo} 
-                      target="_blank" 
+                    <a
+                      href={project.demo}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-neutral-500 hover:text-cyan-400 transition-colors"
                       title="View Live Demo"
@@ -96,7 +96,7 @@ export default function Projects() {
               </div>
               <span className="text-sm text-neutral-500 font-mono mt-1 md:mt-0">{project.date}</span>
             </div>
-            
+
             {/* Tech Stack */}
             <h4 className="text-sm font-medium text-cyan-400 mb-4 font-mono">{project.tech}</h4>
 
@@ -104,7 +104,7 @@ export default function Projects() {
             <p className="text-neutral-400 mb-4 leading-relaxed">
               {project.description}
             </p>
-            
+
             {/* Points */}
             <ul className="space-y-2">
               {project.points.map((point, idx) => (

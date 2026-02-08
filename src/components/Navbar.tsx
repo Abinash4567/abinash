@@ -31,7 +31,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 text-sm font-medium tracking-wide mix-blend-difference text-white pointer-events-none">
       <div className="pointer-events-auto">
-        +5:45
+        UTC +05:30
       </div>
       <div className="pointer-events-auto tabular-nums">
         {time}

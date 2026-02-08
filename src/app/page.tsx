@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import About from "@/components/About";
 import WorkExperience from "@/components/WorkExperience";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import Blogs from "@/components/Blogs";
 
 const navItems = [
   { id: 'about', label: 'About' },
@@ -97,20 +99,10 @@ export default function Home() {
          <Projects />
 
          {/* Skills Section */}
-         <div id="skills" className="h-[80vh] flex flex-col justify-center">
-            <h2 className="text-3xl font-bold mb-6">Skills</h2>
-            <p className="text-lg text-gray-500">
-              Proficient in React, Next.js, Tailwind CSS, and more.
-            </p>
-         </div>
+         <Skills />
 
          {/* Blogs Section */}
-         <div id="blogs" className="h-[80vh] flex flex-col justify-center">
-            <h2 className="text-3xl font-bold mb-6">Blogs</h2>
-            <p className="text-lg text-gray-500">
-              Thoughts and insights on software development and design.
-            </p>
-         </div>
+         <Blogs />
       </section>
     </main>
   );

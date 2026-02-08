@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider"
+
 import { GeistSans } from "geist/font/sans";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Abinash",
@@ -11,17 +12,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={GeistSans.className}>
+    <html lang="en" className={`dark ${GeistSans.className}`}>
       <body>
-        <ThemeProvider 
-          attribute="class" 
-          defaultTheme="system" 
-          enableSystem 
-          disableTransitionOnChange
-        >
-          <Navbar />
-          {children}
-        </ThemeProvider>
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );
