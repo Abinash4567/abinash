@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import About from "@/components/About";
 import WorkExperience from "@/components/WorkExperience";
+import Projects from "@/components/Projects";
 
 const navItems = [
   { id: 'about', label: 'About' },
@@ -93,12 +94,7 @@ export default function Home() {
          <WorkExperience />
 
          {/* Project Section */}
-         <div id="project" className="h-[80vh] flex flex-col justify-center">
-            <h2 className="text-3xl font-bold mb-6">Projects</h2>
-            <p className="text-lg text-gray-500">
-              Showcase of some of my recent work and side projects.
-            </p>
-         </div>
+         <Projects />
 
          {/* Skills Section */}
          <div id="skills" className="h-[80vh] flex flex-col justify-center">

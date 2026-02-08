@@ -43,9 +43,7 @@ export default function About() {
 
         <div className="space-y-4 text-neutral-400 leading-relaxed max-w-2xl text-sm md:text-base">
           <p>
-            I am someone who loves his profession, obsessed with coding, creating, and deeply curious about how things work in Systems and AI.
-          </p>
-          <p>
+            I am someone who loves his profession, obsessed with coding, creating, and deeply curious about how things work in Systems and AI. 
             I am a Computer Science Graduate (Class of 2025) from <strong>Motilal Nehru National Institute of Technology (MNNIT)</strong>.
           </p>
           <p>
