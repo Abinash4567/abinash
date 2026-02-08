@@ -1,31 +1,21 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider"
-import { playfair } from "@/font/font";
-import logo from "../../public/favicon.jpg"
+
+import { GeistSans } from "geist/font/sans";
+import ClientLayout from "@/components/ClientLayout";
 
 export const metadata: Metadata = {
   title: "Abinash",
   description: "Portfolio website"
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={playfair.className}>
-      {/* <link rel="icon" href="../../public/favicon.jpg" sizes="any" /> */}
-        <ThemeProvider
-              attribute="class"
-              defaultTheme="system"
-              enableSystem
-              disableTransitionOnChange
-            >
-        {children}
-        </ThemeProvider>
+    <html lang="en" className={`dark ${GeistSans.className}`}>
+      <body>
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
   );
